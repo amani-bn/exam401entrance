@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+  <div class="card">
+      <p>Total Confirmed: <%=data.TotalConfirmed %></p>
+      <p>Total Deaths: <%=data.TotalDeaths %></p>
+      <p>Total Recovered: <%=data.TotalRecovered %></p>
+
+      <form action="/getCountryResult" method="GET">
+      <input type="text" name="country" id="">
+      <input type="date" name="from" id="">
+      <input type="date" name="to" id="">
+        <button type="submit">Search</button>
+
+      </form>
+
+  </div>
+    </main>
+</body>
+</html>

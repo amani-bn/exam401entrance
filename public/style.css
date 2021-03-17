@@ -1,0 +1,17 @@
+.cards{
+display: grid;
+grid-template-columns: repeat(auto-fit,300px);
+justify-content: center;
+align-items: center;
+}
+.card{
+display: grid;
+grid-template-rows: repeat(auto-fit,50px);
+justify-content: center;
+align-items: center;
+text-align: center;
+box-sizing: border-box;
+border: 2px solid black;
+background: burlywood;
+margin: 5px 5px;
+}

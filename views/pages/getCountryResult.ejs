@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country result</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <main>
+<div class="cards">
+    <% data.forEach(element => {   %>
+        
+        <div class="card">
+            <h2>Country Name: <%=element.country %></h2>
+            <p>Date: <%=element.date %></p>
+            <p>Cases: <%=element.cases %></p>
+            
+            
+        </div>
+        <% });   %>
+</div>
+    </main>
+</body>
+</html>
